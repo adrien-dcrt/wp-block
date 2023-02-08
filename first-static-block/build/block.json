@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "celaneo/block-skill",
+  "version": "0.1.0",
+  "title": "block-skill",
+  "category": "celaneo-theme-design",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    }
+  },
+  "example": {
+    "attributes": {
+      "content": "Hello World"
+    }
+  },
+  "supports": {
+    "html": true
+  },
+  "textdomain": "block-skill",
+  "editorScript": "file:./block-skill.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
