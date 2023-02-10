@@ -20,31 +20,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function register_layout_category( $categories ) {
 
-	$categories[] = array(
-		'slug'  => 'celaneo-theme-design',
-		'title' => 'Celaneo'
-	);
-
-	return $categories;
-}
-
-if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
-	add_filter( 'block_categories_all', 'register_layout_category' );
-} else {
-	add_filter( 'block_categories', 'register_layout_category' );
-}
 function first_block_first_static_block_block_init() {
 	register_block_type( __DIR__ . '/build' );
-
-	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/block-skill.asset.php');
-
-	wp_register_script(
-		'block-skill',
-		plugins_url( 'build/block-skill.js', __FILE__ ),
-		$asset_file['dependencies'],
-		$asset_file['version']
-	);
 }
 add_action( 'init', 'first_block_first_static_block_block_init' );

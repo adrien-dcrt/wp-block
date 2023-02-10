@@ -1,0 +1,7 @@
+http://localhost:8888/wp-admin/theme-install.php?theme=gutenify-fit
+http://localhost:8888/wp-admin/theme-install.php?theme=enwoo
+
+http://localhost:8888/wp-admin/theme-install.php?theme=blocksy
+http://localhost:8888/wp-admin/theme-install.php?theme=colibri-wp
+
+http://localhost:8888/wp-admin/theme-install.php?theme=paloma-fse
